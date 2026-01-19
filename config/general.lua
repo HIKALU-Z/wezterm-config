@@ -1,5 +1,5 @@
 return {
-  -- behaviours
+  -- behaviors
   automatically_reload_config = true,
   check_for_updates = false,
   exit_behavior = "CloseOnCleanExit", -- if the shell program exited with a successful status
@@ -8,7 +8,7 @@ return {
   -- scrollbar
   scrollback_lines = 5000,
 
-  -- paste behaviours
+  -- paste behaviors
   canonicalize_pasted_newlines = "CarriageReturn",
 
   hyperlink_rules = {

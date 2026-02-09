@@ -1,3 +1,4 @@
+
 # make sure we have the right prompt render correctly
 if ($env.config? | is-not-empty) {
     $env.config = ($env.config | upsert render_right_prompt_on_last_line true)
@@ -5,7 +6,7 @@ if ($env.config? | is-not-empty) {
 
 $env.POWERLINE_COMMAND = 'oh-my-posh'
 $env.PROMPT_INDICATOR = ""
-$env.POSH_SESSION_ID = "b31f67e3-0468-4d49-8812-c604553a4c59"
+$env.POSH_SESSION_ID = "8e510410-d216-4e95-9e82-8800b18ec09a"
 $env.POSH_SHELL = "nu"
 $env.POSH_SHELL_VERSION = (version | get version)
 

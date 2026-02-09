@@ -17,26 +17,26 @@
                 {
                     "type": "text",
                     "style": "diamond",
-                    "leading_diamond": "\ue0b6",
+                    "leading_diamond": "",
                     "foreground": "p:white",
                     "background": "p:tan",
-                    "template": "{{ if .Env.PNPPSHOST }} \uf8c5 {{ .Env.PNPPSHOST }} {{ end }}"
+                    "template": "{{ if .Env.PNPPSHOST }}  {{ .Env.PNPPSHOST }} {{ end }}"
                 },
                 {
                     "type": "text",
                     "style": "powerline",
                     "foreground": "p:white",
                     "background": "p:teal",
-                    "powerline_symbol": "\ue0b0",
-                    "template": "{{ if .Env.PNPPSSITE }} \uf2dd {{ .Env.PNPPSSITE }}{{ end }}"
+                    "powerline_symbol": "",
+                    "template": "{{ if .Env.PNPPSSITE }}  {{ .Env.PNPPSSITE }}{{ end }}"
                 },
                 {
                     "type": "text",
                     "style": "diamond",
-                    "trailing_diamond": "\ue0b4",
+                    "trailing_diamond": "",
                     "foreground": "p:white",
                     "background": "p:teal",
-                    "template": "{{ if .Env.PNPPSSITE }}\u00A0{{ end }}"
+                    "template": "{{ if .Env.PNPPSSITE }} {{ end }}"
                 }
             ],
             "type": "rprompt"
@@ -47,7 +47,7 @@
                 {
                     "background": "p:plum",
                     "foreground": "p:white",
-                    "leading_diamond": "\ue0b6",
+                    "leading_diamond": "",
                     "style": "diamond",
                     "template": "{{ .UserName }} ",
                     "type": "session"
@@ -55,7 +55,7 @@
                 {
                     "background": "p:blush",
                     "foreground": "p:white",
-                    "powerline_symbol": "\ue0b0",
+                    "powerline_symbol": "",
                     "options": {
                         "style": "folder"
                     },
@@ -66,22 +66,22 @@
                 {
                     "background": "p:salmon",
                     "foreground": "p:white",
-                    "powerline_symbol": "\ue0b0",
+                    "powerline_symbol": "",
                     "options": {
                         "branch_icon": "",
                         "fetch_status": false,
                         "fetch_upstream_icon": true
                     },
                     "style": "powerline",
-                    "template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+                    "template": " ➜ ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }}) ",
                     "type": "git"
                 },
                 {
                     "background": "p:sky",
                     "foreground": "p:white",
-                    "powerline_symbol": "\ue0b0",
+                    "powerline_symbol": "",
                     "style": "powerline",
-                    "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+                    "template": "  {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
                     "type": "node"
                 },
                 {
@@ -91,8 +91,8 @@
                         "time_format": "15:04"
                     },
                     "style": "diamond",
-                    "template": " \u2665 {{ .CurrentDate | date .Format }} ",
-                    "trailing_diamond": "\ue0b0",
+                    "template": " ♥ {{ .CurrentDate | date .Format }} ",
+                    "trailing_diamond": "",
                     "type": "time"
                 }
             ],
